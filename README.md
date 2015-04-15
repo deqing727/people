@@ -14,7 +14,10 @@ git config --system core.eol lf
 git config --system core.autocrlf input
 git config --system core.safecrlf true
 
+got the followin error
+$ git add README.md
+fatal: CRLF would be replaced by LF in README.md.
 
-try the following
+try the following and it is fixed.
 git config --global core.autocrlf false
 git config --system core.autocrlf false
